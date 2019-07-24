@@ -1,0 +1,20 @@
+dist: xenial
+language: node_js
+node_js:
+- lts/*
+cache: npm
+install:
+- npm install
+script:
+- npm test
+- npm run build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  verbose: true
+  github-token:
+    secure: ZBjdHqrv5bpjFwqYSsaSAzR3+bgKC2L6IGsSRd0upF2PZ2PkGfiyZ93NOacK3e0l92Cb+hCnH1CjyVb4dvO+7kkkHc15TResvWlNQL06q3kBO/iWmtpWsSgSEtDqRpVmnhY9c/S9+qRSkV4jhBkw/S6OGiT1zdzZRD3XxkGp9qPI6/bWRD/lhpXcw40BaealrQN4r8Eo5iiSjWW+RSkS263UEvqkkJqNET0BoOyc/atd+HItoEdwj4SWse4HKCzr+EGOvwkrlBsyMzPI+WZnjvRsXAaRk5wKX358nl/1DOkjRA5xWpB5ywEPWvHJhjkscugmVqd9pYj/Ngna9JnZO7+gTXTLXYKVE4rft3rJKoVQvd2cgEA9pKAXU+IChC8kTjfgIDXI7NuMVjZz2oe9uQ2qYmjvr+YKWChx2NEo/1nHydpEoMGFsh5YwuT4I4PhwT/i1fTHwM0HYCCf6AnuGfSErhhwaAOiMn00D95bnQ2oUJtb9fk7LJ2vRnkvsaUo529n5CD/J5K3KFJNABDYsmBl5cutNdQgVkJi/+uyuisOzVdrHfztKAWRlgvcsmqkVn5SXtROrJk7qXr2t77RGsFm2QpgbZOok/HaqN0ba7KyVkmTQtb+b9Z+VhTXFiazh0RZ6taL+VM6+XiYPPYQwcicEXUFXMEsF/akF6HG+fM=
+  keep-history: true
+  local-dir: public
+  on:
+    branch: master
