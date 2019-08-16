@@ -5,7 +5,7 @@ import './Buttons.scss'
 
 
 const Button = ({ buttonClass, text }) => (
-    <a href="#" className={buttonClass}>{text}</a>
+    <a href="#1" className={buttonClass}>{text}</a>
 
 );
 

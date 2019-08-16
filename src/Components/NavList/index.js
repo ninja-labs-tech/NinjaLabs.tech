@@ -13,19 +13,19 @@ const NavList = () => {
         <nav className={`main-nav ${navState}`}>
             <ul className="unstyled-list">
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#1">Home</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#1">About</a>
                 </li>
                 <li>
-                    <a href="#">Blog</a>
+                    <a href="#1">Blog</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
+                    <a href="#1">Services</a>
                 </li>
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="#1">Contact</a>
                 </li>
             </ul>
         </nav>
