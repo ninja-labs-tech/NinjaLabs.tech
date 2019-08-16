@@ -1,0 +1,41 @@
+@import '../../main.scss';
+@import '../../abstracts/colors.scss';
+
+footer {
+    background: $primary;
+    color: $text-inverse;
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 0 .5em;
+        background: url('/NINJALabs-3.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.05;
+    }
+    padding: 3em 0;
+    &.icon {
+        color: $text-inverse;
+    }
+}
+
+.social-links {
+    display: flex;
+    font-size: 3rem;
+    padding-left: 0;
+    justify-content: space-around;
+    opacity: 0.8;
+    margin: 1em 0;
+    list-style: none;
+}
+
+footer .container-footer {
+    max-width: 25em;
+}

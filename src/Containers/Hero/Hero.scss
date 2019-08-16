@@ -1,0 +1,21 @@
+@import '../../main.scss';
+@import '../../abstracts/colors.scss';
+
+.hero {
+    // background: linear-gradient(to right, $primary, $secondary);
+    background-image: linear-gradient(to right, $primary, $secondary), url('/Website-Design-Background.png');
+    background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    color: $text-inverse;
+    padding-top:  10em;
+    padding-bottom: 8em;
+    text-align: center;
+    @media(min-width: 1150px) {
+        text-align: left;
+        // padding-bottom: 0;
+        height: 100vmin;
+    } 
+}

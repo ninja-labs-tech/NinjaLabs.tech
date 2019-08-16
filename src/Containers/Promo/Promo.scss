@@ -1,0 +1,15 @@
+@import '../../main.scss';
+@import '../../abstracts/colors.scss';
+
+.promo .bg-primary {
+    text-align: left;
+    padding-left: 7em;
+    padding-top: 7.5em;
+    padding-bottom: 7.5em;
+}
+
+.img-box {
+    background-image: url("/code-img.png");
+    background-size: cover;
+    background-position: center;
+}

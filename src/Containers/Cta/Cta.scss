@@ -1,0 +1,56 @@
+@import '../../main.scss';
+@import '../../abstracts/colors.scss';
+
+.cta {
+    background-color: $accent;
+    background-image: url('/development-terms-featurd.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 5em 0;
+    background-blend-mode: multiply;
+    color: $primary;
+    overflow: hidden;
+    transition: all ease-in-out 500ms;
+
+    @media(min-width: 1150px) {
+        padding: 10em 0;        
+        &::before, &::after {
+            content: '';
+            display: block;
+            background: $secondary;
+            position: absolute;
+            width: 100%;
+            border: 1em solid $white
+
+        }
+        &::before {
+            top: 0;
+            bottom: -1em;
+            transform: skewX(60deg);
+            left: -100%
+        }
+        &::after {
+            top: -1em;
+            bottom: 0;
+            transform: skewX(60deg);
+            right: -100%
+        }
+        &:hover::after {
+            right: -90%;
+            transition: all 500ms ease-in ;
+
+        }
+        &:hover::before {
+            left: -90%;
+            transition: all 500ms ease-in ;
+            
+
+        }
+
+        .container-cta {
+            width: 50%;
+
+        }
+    }
+}
