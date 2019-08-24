@@ -1,14 +1,16 @@
-@import '../abstracts/colors.scss';
-@import '../abstracts/type.scss';
-
+@import "../abstracts/colors.scss";
+@import "../abstracts/type.scss";
 
 html {
-    @include font($font-normal);
-    line-height: 1.6;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+  @include font($font-normal);
+  line-height: 1.6;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
-
+* {
+    box-sizing: border-box !important;
+}
 body {
-    margin: 0;
+  margin: 0;
+  box-sizing: border-box;
 }

@@ -1,0 +1,15 @@
+/* This file contains global CSS variables that can be reused all around the application */
+
+// App Colors
+$primary: #4b4340;
+$secondary: #d2584b;
+$accent: #c1ab8a;
+
+// App Fonts
+$raleway: "Raleway";
+
+// App Structure
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
