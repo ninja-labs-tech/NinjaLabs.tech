@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CustomButton from '../UIElements/CustomButton/CustomButton';
+
 import styles from './AppHeader.module.scss';
 
 const AppHeader = () => {
@@ -27,7 +29,7 @@ const AppHeader = () => {
             </div>
 
             <div className={styles['controllers-container']}>
-                <button className={styles["get-package-btn"]}><i className="fa fa-check" /> Develop My Project</button>
+                <CustomButton type="secondary" action={() => console.log('Action Placeholder')} icon="check">Develop My Project</CustomButton>
                 <button className={styles["toggle-nav"]}><i className="fa fa-bars" /></button>
             </div>
         </header>

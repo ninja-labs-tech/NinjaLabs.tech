@@ -1,3 +1,4 @@
+@import '../../common.scss';
 
 .header {
   padding-top: 1em;
@@ -40,13 +41,13 @@
         list-style-type: none;
         align-items: flex-start;
         li {
-          margin: 0 1rem;
+          margin: 0 1.5rem;
           a {
             text-decoration: none;
             color: #fff;
             font-size: 110%;
             i {
-              color: #d2584b;
+              color: $secondary;
               padding: 0 0.4rem;
             }
           }
@@ -63,13 +64,13 @@
       outline: 0;
       border-radius: 30px;
       padding: 0.7rem 1.5rem;
-      color: #d2584b;
+      color: $secondary;
       font-size: 0.8rem;
       font-weight: 500;
       margin: 0 0.3rem;
     }
     .toggle-nav {
-      background-color: #d2584b;
+      background-color: $secondary;
       border: 0;
       outline: 0;
       width: 2.4rem;

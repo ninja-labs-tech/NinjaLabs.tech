@@ -1,0 +1,31 @@
+@import "../../../common.scss";
+
+.btn {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 88%;
+  margin: 0 0.4rem;
+  font-family: $raleway;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.primary {
+  background-color: $secondary;
+  color: #FFF;
+  &:hover {
+    color: $secondary;
+    background: #f1f1f1;
+  }
+}
+.secondary {
+  background: #fff;
+  color: $secondary;
+  &:hover {
+    background: $secondary;
+    color: #FFF;
+  }
+}

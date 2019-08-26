@@ -1,3 +1,5 @@
+@import "../../common.scss";
+
 .banner-section-container {
   height: 100vh;
   background-image: url("/pattern.png");
@@ -7,4 +9,88 @@
   background-blend-mode: multiply;
   color: #fff;
   text-align: center;
+  .banner-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .ninja-text {
+      width: 65%;
+      padding-right: 3rem;
+      padding-top: 8vh;
+      padding-left: 5rem;
+      padding-right: 6rem;
+      margin-left: 35%;
+      text-transform: capitalize;
+      text-align: left;
+      p.ninja-description {
+        text-align: left;
+        font-size: 150%;
+        font-family: $raleway;
+        font-weight: 100;
+        margin: 0;
+        line-height: 2.4rem;
+        text-transform: capitalize;
+        font-weight: 300;
+        margin-bottom: 3rem;
+        span {
+          font-weight: bold;
+        }
+      }
+      .brief-features {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2rem;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        .single-feature {
+          text-align: center;
+          color: #fff;
+          margin: 0 1rem;
+          h1 {
+            font-weight: 800;
+            font-size: 3rem;
+            font-family: "Caveat", cursive;
+            margin: 0;
+            color: #a88f6d;
+          }
+          p {
+            color: #a88f6d;
+          }
+        }
+      }
+      .shurikens {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 2rem 0;
+        .shurikens-pic {
+          width: 20%;
+        }
+        .shurikens-link {
+          h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            display: inline-block;
+            border-bottom: 4px solid #d2584b;
+            border-radius: 7px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+    .ninja-pic {
+      width: 35%;
+      background-image: url("/ninjapng.png");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
 }
