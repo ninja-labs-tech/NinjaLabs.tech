@@ -20,10 +20,10 @@ const AppHeader = () => {
             <div className={styles['nav-menu-container']}>
                 <nav className={styles["nav-menu"]}>
                     <ul>
-                        <li><a href="#"><i className="fa fa-home" />Home</a></li>
-                        <li><a href="#"><i className="fa fa-users" />Meet the Team</a></li>
-                        <li><a href="#"><i className="fa fa-asterisk" />Services</a></li>
-                        <li><a href="#"><i className="fa fa-coffee" />Contact Us</a></li>
+                        <li><a href="#home"><i className="fa fa-home" />Home</a></li>
+                        <li><a href="#team"><i className="fa fa-users" />Meet the Team</a></li>
+                        <li><a href="#services"><i className="fa fa-asterisk" />Services</a></li>
+                        <li><a href="#contact"><i className="fa fa-coffee" />Contact Us</a></li>
                     </ul>
                 </nav>
             </div>
